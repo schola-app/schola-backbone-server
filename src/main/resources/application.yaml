@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "schola-backbone-server"
+  jpa:
+    open-in-view: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/schola
+    username: root
+    password: root
+  hibernate:
+    auto-ddl: update
+  security:
+    # This is a custom section i created for secure password's
+    password:
+      checker:
+        secure: weak
